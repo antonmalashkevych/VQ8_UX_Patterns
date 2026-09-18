@@ -141,7 +141,7 @@ This is the pattern backlog. Each row becomes one file in `patterns/` using `PAT
 | nav-sidebar-01 | sidebar: collapsed and expanded | Side bar, Left menu items | Widths `layout/sidebar-collapsed` and `layout/sidebar-expanded`; toggle position; group order Ana, primary, APPS, SAVED, SYSTEM; group labels in `font-size/meta` caps, `text/muted`; state persistence per user |
 | nav-sidebar-02 | Sidebar item states | Left menu items | default, hover, active, disabled, badge (alert count); icon-only tooltips in collapsed mode |
 | nav-toolbar-01 | Right toolbar: contents and states | Right menu, Icon button | Which actions qualify (view-level only); order; pinned-bottom item (feedback); collapsed-only vs labeled; hide when the view has no actions |
-| nav-user-01 | User menu placement and contents | Menu items/Profile, Profile menu | See open question 8.1. Contents: theme selector, Profile, User Management (role-gated), Manage Quick Access Buttons (admin), Logout |
+| nav-user-01 | User menu placement and contents | Menu items/Profile, Profile menu | Contents: theme selector, Profile, User Management (role-gated), Manage Quick Access Buttons (admin), Logout |
 | nav-ana-01 | Ana panel: open, collapsed, closed | Panels/Conversation, Inputs/Chat | Opens as left column at `layout/panel-ana-expanded` (not below `layout/panel-ana-min`), collapses to `layout/panel-ana-collapsed`, closes; sidebar Ana block hides when panel is open; New conversation and History entry points |
 | nav-home-01 | Home / Command Center content tabs | Tabs | Live Insight Feed, AI Suggested Dashboards, Saved, Last Opened; analysis view replaces tabs when Ana produces an analysis |
 | nav-tabs-01 | In-page tabs and segmented controls | Tabs, Segments control | When tabs vs segments vs filter chips; max count; URL binding |
@@ -231,25 +231,7 @@ Output
 
 ---
 
-## 8. Open questions for the owner
-
-8.1 User menu placement: top right vs bottom left of the sidebar.
-Evidence: the Command Center concept removes the global top bar and puts the avatar in the sidebar's SYSTEM group at the bottom, with the menu flying out to the right. The Kinetic kit still has Navigation bars/Top bar with the user name at right (carried from VQ8) and Menu items/Profile menu.
-Recommendation: bottom left of the sidebar, one location, because (a) the shell has no top bar so top right would require adding one, (b) it matches the convention users see in Slack, Linear, ChatGPT, and Claude, (c) it keeps the content area's top edge for app-level toolbars and breadcrumbs. Cost: legacy VQ8 users expect top right; mitigate with a one-time coach mark for the first release. Decide, then nav-user-01 becomes `stable` and Top bar's user name variant is deprecated in the kit.
-
-8.2 Where do Payer Action Center and the CFO Reserves and Forecasting Suite live in the sidebar: under Analytics, or as APPS?
-
-8.3 Client and facility switcher: does it exist in the shell, and does switching reset filters?
-
-8.4 Which surfaces support right-click today, if any? Needed before ctx-rightclick-01.
-
-8.5 Personas: confirm the user list in 2.4 against internal personas and add role names used internally.
-
-8.6 Phase 1 scope check: state-* and fb-* patterns are placed in Phase 1 on the argument that every screen has them. Confirm or move.
-
----
-
-## 9. Sources
+## 8. Sources
 - visiquate.com home, Ana, Denials Management Analytics, Revenue Management Analytics, Payer Action Center, Policy Pulse pages (fetched 2026-09-18)
 - Figma: Kinetic Platform - Atomic Library of Elements (component and variable inventory, 2026-09-18)
 - Figma: VQ8 Platform - Atomic Library of Elements (For Code Connect), legacy reference
