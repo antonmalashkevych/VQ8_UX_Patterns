@@ -14,11 +14,11 @@ Read `AGENTS.md` first. Load a pattern file only when its `applies-to` matches y
 |---|---|---|---|---|---|
 | nav-shell-01 | App shell layout | 1 | proposed | shell | patterns/nav-shell-01.md |
 | nav-sidebar-01 | Sidebar | 1 | draft | shell | patterns/nav-sidebar-01.md |
-| nav-toolbar-01 | Right toolbar contents and states | 1 | proposed | shell | patterns/nav-toolbar-01.md |
+| nav-toolbar-01 | Toolbar | 1 | proposed | shell | patterns/nav-toolbar-01.md |
 | nav-user-01 | User menu placement and contents | 1 | proposed | shell | patterns/nav-user-01.md |
 | nav-ana-01 | Ana panel open, collapsed, closed | 1 | proposed | shell, ana | patterns/nav-ana-01.md |
-| nav-home-01 | Command Center content tabs | 1 | proposed | shell | patterns/nav-home-01.md |
-| nav-tabs-01 | In-page tabs and segmented controls | 1 | proposed | all | patterns/nav-tabs-01.md |
+| nav-tabs-01 | Content tabs | 1 | draft | shell | patterns/nav-tabs-01.md |
+| nav-cvbar-01 | CV navigation bar | 1 | proposed | admin | patterns/nav-cvbar-01.md |
 | nav-breadcrumb-01 | Breadcrumb and location | 1 | proposed | all | patterns/nav-breadcrumb-01.md |
 | nav-client-01 | Client and facility switcher | 1 | proposed | shell | patterns/nav-client-01.md |
 | nav-alerts-01 | Alerts entry and list | 1 | proposed | shell | patterns/nav-alerts-01.md |

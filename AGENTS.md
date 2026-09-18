@@ -140,11 +140,11 @@ This is the pattern backlog. Each row becomes one file in `patterns/` using `PAT
 |---|---|---|---|
 | nav-shell-01 | App shell layout | Side bar, Panels | Outer gutter `layout/shell-gutter` on all sides; sidebar + optional Ana panel + content; no global top bar `[verified from prototype]`; where app-level toolbars go |
 | nav-sidebar-01 | Sidebar | Navigation bars/Side bar, Menu items/Side bar/Item card, Inputs/Search field, Tabs/Segments control/Default, Switcher/General, Primitives/Avatars | Written: `patterns/nav-sidebar-01.md` |
-| nav-toolbar-01 | Right toolbar: contents and states | Right menu, Icon button | Which actions qualify (view-level only); order; pinned-bottom item (feedback); collapsed-only vs labeled; hide when the view has no actions |
+| nav-toolbar-01 | Toolbar | Navigation bars/Right menu, Menu items/Bar item, Menu items/Profile | Written: `patterns/nav-toolbar-01.md` |
 | nav-user-01 | User menu placement and contents | Menu items/Profile, Profile menu | Contents: theme selector, Profile, User Management (role-gated), Manage Quick Access Buttons (admin), Logout |
 | nav-ana-01 | Ana panel: open, collapsed, closed | Panels/Conversation, Inputs/Chat | Opens as left column at `layout/panel-ana-expanded` (not below `layout/panel-ana-min`), collapses to `layout/panel-ana-collapsed`, closes; sidebar Ana block hides when panel is open; New conversation and History entry points |
-| nav-home-01 | Home / Command Center content tabs | Tabs | Live Insight Feed, AI Suggested Dashboards, Saved, Last Opened; analysis view replaces tabs when Ana produces an analysis |
-| nav-tabs-01 | In-page tabs and segmented controls | Tabs, Segments control | When tabs vs segments vs filter chips; max count; URL binding |
+| nav-tabs-01 | Content tabs | Navigation bars/Top bar, Tabs/Top bar, Selections/Arrow switches, Badges/Status | Written: `patterns/nav-tabs-01.md` |
+| nav-cvbar-01 | CV navigation bar | Navigation bars/CV navigation bar, Tabs/Atoms/Segments control/Rounded, Tabs/Atoms/Segment | Written: `patterns/nav-cvbar-01.md` |
 | nav-breadcrumb-01 | Breadcrumb and location indicator | Breadcrumbs | Path shows client / area / item; truncation; clickable ancestors |
 | nav-client-01 | Client and facility context switcher | Dropdown | Where it lives, how switching resets or keeps filters `[draft: not in prototype]` |
 | nav-alerts-01 | Alerts entry point and list | Notification, alerts icon | Badge count, list panel vs page, mark read |
