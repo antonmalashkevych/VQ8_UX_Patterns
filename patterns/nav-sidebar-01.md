@@ -90,13 +90,6 @@ collapsed          expanded
 - While the Ana panel is collapsed, the sidebar MUST show New conversation and Conversation history under the header.
 - The sidebar MUST NOT contain the Ana conversation.
 
-## Content
-- Item labels: product names, title case: "Live Insight Feed", "Denial Resolution Copilot".
-- Group label: "TOOLS".
-- Footer: "Ask Ana ( / )", "Help", user's first name and last initial.
-- Search placeholder: "Search items...".
-- Switch label: "Pin starred to top".
-
 ## Variants
 - Collapsed.
 - Expanded.
@@ -120,5 +113,5 @@ Single collapsible sidebar with icon-only and labeled states, separate from the 
 - Reference build: https://antonmalashkevych.github.io/kinetic_ux/
 
 ## Changelog
-- 0.2 2026-09-18: reduced to observed behavior only.
+- 0.2 2026-09-18: reduced to observed behavior only; Content section removed.
 - 0.1 2026-09-18: created.
