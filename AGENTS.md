@@ -34,19 +34,20 @@ The revenue cycle is the sequence from patient scheduling and registration, thro
 - Commercial promise: 3-5X return on analytics within 12 months. `[verified]`
 
 ### 2.3 Product surfaces
-From visiquate.com and the Command Center concept. Names in the left navigation of the Command Center prototype are the current working set. `[verified from prototype, naming needs confirmation]`
+From visiquate.com and the Kinetic reference build (https://antonmalashkevych.github.io/kinetic_ux/). Sidebar placement follows the reference build. `[verified from reference build]`
 
-| Surface | What it is | Nav placement in concept |
+| Surface | What it is | Sidebar placement |
 |---|---|---|
-| Ana | AI intelligence layer: nine agents (Account Navigator, Anomaly Detector, Conversational Analytics Assistant, KPI Insights Coach, Recommendation Expert, Bundling Manager, Workflow Optimizer, Prioritization Assistant, plus one more). Conversational panel, insight feed, suggested dashboards. | Dedicated block at top of sidebar; opens as a left column panel with expanded and collapsed widths (tokens: `layout/panel-ana-expanded`, `layout/panel-ana-collapsed`) |
-| Analytics | Analytics Suite: Denials Management, Revenue Management, Patient Access, Coding Audit, Workforce Performance, Vendor Performance; Performance Power Packs (E&M Sonar, Late Charge, Self-Pay, Credit Balance, Charge Reconciliation) | sidebar, primary group |
-| FLO | Workflow and prioritization (Full Score - Flo); Flo grid, Flo rules, worklists | sidebar, primary group |
-| Policy Pulse | Payer policy change monitoring, impact scoring, scenario modeling | sidebar, primary group |
-| Denial Resolution Copilot | AI-assisted denial workflow app | sidebar, APPS group |
-| Patient Access Copilot | AI-assisted front-end (registration, authorization, eligibility) app | sidebar, APPS group |
-| Payer Action Center | Track, escalate, recover against payers | Not in prototype nav `[draft: where does it live?]` |
-| Favorites, Quick Access, Alerts | Saved items (user), admin-pinned items, alert list | sidebar, SAVED group |
-| User, Help | Profile, User Management, Manage Quick Access Buttons, theme, Logout; Help | sidebar, SYSTEM group at bottom |
+| Ana | AI intelligence layer: nine agents (Account Navigator, Anomaly Detector, Conversational Analytics Assistant, KPI Insights Coach, Recommendation Expert, Bundling Manager, Workflow Optimizer, Prioritization Assistant, plus one more). Conversational panel, insight feed, suggested dashboards. | Own panel between sidebar and content, expanded or collapsed (`layout/panel-ana-expanded`, `layout/panel-ana-collapsed`); sidebar footer item Ask Ana; New conversation and Conversation history appear in the sidebar only while the panel is collapsed |
+| Analytics | Analytics Suite: Denials Management, Revenue Management, Patient Access, Coding Audit, Workforce Performance, Vendor Performance; Performance Power Packs (E&M Sonar, Late Charge, Self-Pay, Credit Balance, Charge Reconciliation) | Not in reference build sidebar `[draft]` |
+| FLO | Workflow and prioritization (Full Score - Flo); Flo grid, Flo rules, worklists | Not in reference build sidebar `[draft]` |
+| Policy Pulse | Payer policy change monitoring, impact scoring, scenario modeling | Not in reference build sidebar `[draft]` |
+| Denial Resolution Copilot | AI-assisted denial workflow app | Sidebar, TOOLS group |
+| Patient Access Copilot | AI-assisted front-end (registration, authorization, eligibility) app | Sidebar, TOOLS group |
+| Payer Action Center | Track, escalate, recover against payers | Not in reference build sidebar `[draft]` |
+| Command Center, Live Insight Feed, Favorites, Last Opened | Home views: insight feed, favorites, recently opened items | Sidebar, core group; any item can be starred and pinned to top |
+| Alerts | Alert list; the only badged item | Sidebar, TOOLS group |
+| Ask Ana, Help, User | Ask Ana focuses the Ana input (shortcut `/`); Help; user opens the user menu | Sidebar footer |
 
 ### 2.4 Users
 Primary: revenue cycle directors and managers, denials and appeals specialists, billing and coding staff, patient access staff, payer relations, compliance. Secondary: CFO and executive leadership consuming summaries and forecasts. Users work in dense data all day, often across several payers and facilities, and are measured on dollars recovered, A/R days, and denial rate. `[verified from marketing, roles need confirmation against actual personas]`
@@ -138,8 +139,7 @@ This is the pattern backlog. Each row becomes one file in `patterns/` using `PAT
 | ID | Pattern | Kit components | Key decisions to capture |
 |---|---|---|---|
 | nav-shell-01 | App shell layout | Side bar, Panels | Outer gutter `layout/shell-gutter` on all sides; sidebar + optional Ana panel + content; no global top bar `[verified from prototype]`; where app-level toolbars go |
-| nav-sidebar-01 | sidebar: collapsed and expanded | Side bar, Left menu items | Widths `layout/sidebar-collapsed` and `layout/sidebar-expanded`; toggle position; group order Ana, primary, APPS, SAVED, SYSTEM; group labels in `font-size/meta` caps, `text/muted`; state persistence per user |
-| nav-sidebar-02 | Sidebar item states | Left menu items | default, hover, active, disabled, badge (alert count); icon-only tooltips in collapsed mode |
+| nav-sidebar-01 | Sidebar | Side bar, Side bar/Item card, Search field, Segments control, Switcher | Written: `patterns/nav-sidebar-01.md` |
 | nav-toolbar-01 | Right toolbar: contents and states | Right menu, Icon button | Which actions qualify (view-level only); order; pinned-bottom item (feedback); collapsed-only vs labeled; hide when the view has no actions |
 | nav-user-01 | User menu placement and contents | Menu items/Profile, Profile menu | Contents: theme selector, Profile, User Management (role-gated), Manage Quick Access Buttons (admin), Logout |
 | nav-ana-01 | Ana panel: open, collapsed, closed | Panels/Conversation, Inputs/Chat | Opens as left column at `layout/panel-ana-expanded` (not below `layout/panel-ana-min`), collapses to `layout/panel-ana-collapsed`, closes; sidebar Ana block hides when panel is open; New conversation and History entry points |
@@ -204,7 +204,7 @@ This is the pattern backlog. Each row becomes one file in `patterns/` using `PAT
 Shell and navigation
 - MUST render inside the shell (nav-shell-01). MUST NOT add a second global navigation or a top bar.
 - MUST place the user menu in exactly the location nav-user-01 specifies, nowhere else.
-- MUST keep the sidebar group order: Ana, primary surfaces, APPS, SAVED, SYSTEM.
+- MUST keep the sidebar group order: core views, TOOLS, footer (nav-sidebar-01).
 - MUST put destinations in the sidebar and view actions in the toolbar.
 - MUST use glossary names for shell parts.
 

@@ -13,8 +13,7 @@ Read `AGENTS.md` first. Load a pattern file only when its `applies-to` matches y
 | ID | Name | Phase | Status | Applies to | File |
 |---|---|---|---|---|---|
 | nav-shell-01 | App shell layout | 1 | proposed | shell | patterns/nav-shell-01.md |
-| nav-sidebar-01 | sidebar collapsed and expanded | 1 | proposed | shell | patterns/nav-sidebar-01.md |
-| nav-sidebar-02 | Sidebar item states | 1 | proposed | shell | patterns/nav-sidebar-02.md |
+| nav-sidebar-01 | Sidebar | 1 | draft | shell | patterns/nav-sidebar-01.md |
 | nav-toolbar-01 | Right toolbar contents and states | 1 | proposed | shell | patterns/nav-toolbar-01.md |
 | nav-user-01 | User menu placement and contents | 1 | proposed | shell | patterns/nav-user-01.md |
 | nav-ana-01 | Ana panel open, collapsed, closed | 1 | proposed | shell, ana | patterns/nav-ana-01.md |
