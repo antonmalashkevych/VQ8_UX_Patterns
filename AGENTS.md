@@ -45,7 +45,7 @@ From visiquate.com and the Kinetic reference build (https://antonmalashkevych.gi
 | Denial Resolution Copilot | AI-assisted denial workflow app | Sidebar, TOOLS group |
 | Patient Access Copilot | AI-assisted front-end (registration, authorization, eligibility) app | Sidebar, TOOLS group |
 | Payer Action Center | Track, escalate, recover against payers | Not in reference build sidebar `[draft]` |
-| Command Center, Live Insight Feed, Favorites, Last Opened | Home views: insight feed, favorites, recently opened items | Sidebar, core group; any item can be starred and pinned to top |
+| Command Center, Live Insight Feed, Favorites, Last Opened | Home views: insight feed, favorites, recently opened items | Sidebar, core group; starrable, starred items can be pinned to top |
 | Alerts | Alert list; the only badged item | Sidebar, TOOLS group |
 | Ask Ana, Help, User | Ask Ana focuses the Ana input (shortcut `/`); Help; user opens the user menu | Sidebar footer |
 
@@ -107,11 +107,11 @@ Define once, use consistently. Agents MUST use these terms and MUST NOT introduc
 
 Component sets in the Kinetic library, grouped. Patterns reference these by name. If a pattern needs a component not listed, it is a kit request, not a pattern.
 
-Navigation: Navigation bars/Side bar, Left menu, Right menu, Top bar, CV navigation bar (KIT REQUEST: rename Left menu to Sidebar and Right menu to Toolbar to match the glossary); Menu items/Left menu items, Bar item, Profile, Profile menu, Side bar/Item card, Context menu; Breadcrumbs; Tabs (Top bar, KPI Segments, Segments control Default/Ghost/Outline/Rounded); Navigation/Stepper.
+Navigation: Navigation bars/Side bar, Navigation bars/Left menu (KIT REQUEST: deprecate, replaced by Side bar), Navigation bars/Right menu (KIT REQUEST: rename to Toolbar), Navigation bars/Top bar, Navigation bars/CV navigation bar; Menu items/Left menu items, Menu items/Bar item, Menu items/Profile, Menu items/Profile menu, Menu items/Side bar/Item card, Menu items/Context menu; Breadcrumbs; Tabs (Top bar, KPI Segments, Segments control Default/Ghost/Outline/Rounded); Navigation/Stepper.
 
 Inputs: Buttons/General (primary, cta, secondary, ghost, danger), Outline, Text button, Icon button; Inputs/Text input, Text area, Search field, Date field, Phone, Currency, Grouped, Authorization fields, Chat; Dropdowns/Dropdown, Dropdown list, Multiselect, Calendar, Time picker; Checkboxes/General, Checkbox with selection, Permissions, Reco Engine List Item; Radio; Switcher/General (toggle), Switcher/Button (segmented); Selections/Arrow switches; AdvancedUserFilters; Tables/Table filters; thumbsup, thumbsdown.
 
-Data display: Tables/Card grid, Headers, Card grid data row, Flo grid data field; Cards/Users, Group Membership, Assigned Permissions, Inherited Permission, Rec Engine Action, Process Preview; Badges/Status, Tag, Chips, Dot, Filter; Avatars; Icon/Priority; Timeline item; Event item; Accordions.
+Data display: Tables/Card grid, Headers, Card grid data row, Flo grid data field; Cards/Users, Group Membership, Assigned Permissions, Inherited Permission, Rec Engine Action, Process Preview; Badges/Status, Tag, Chips, Dot, Filter; Primitives/Avatars; Icon/Priority; Timeline item; Event item; Accordions.
 
 Feedback: Notification; Panels/Alerts; Tooltips/Infoblock, Validation, Black; Tooltip; Loaders/Spinner, Progress indicator, Progress indicator XS, Skeleton loader, Grid loaders, Segments loaders; banner-notifications; warning-banner.
 
@@ -119,7 +119,7 @@ Overlays: Modals, Modals/Status Modal, Modals/File Upload, Info modal; Headers/M
 
 AI (Ana): Conversation item/Chat/Ana response, User response, Chat reminder, Conversation panel elements, Conversations list items; Icon/Ana/Rounded chat icons, Animation; Ana/Buttons (in review); Inputs/Chat.
 
-Known kit gaps (found by search, absent from library): pagination, slider, popover, drawer, empty state, chart components, KPI tile (only Tabs/KPI Segments), footer, standalone link, form layout. Patterns that need these will name the gap in `kit-components` as `MISSING: <name>`. The same applies to variables: token names in section 6 under `layout/`, `border/`, and `motion/` do not exist in the kit yet and are open `TOKEN REQUEST`s for the kit lane to define.
+Known kit gaps (found by search, absent from library): pagination, slider, popover, drawer, empty state, chart components, KPI tile (only Tabs/KPI Segments), footer, standalone link, form layout. Patterns that need these will name the gap in `kit-components` as `MISSING: <name>`. The same applies to variables: a pattern names a missing token as `TOKEN REQUEST: <name>` in its `kit-notes`; `layout/` and `motion/` tokens are the current requests.
 
 ---
 
@@ -139,7 +139,7 @@ This is the pattern backlog. Each row becomes one file in `patterns/` using `PAT
 | ID | Pattern | Kit components | Key decisions to capture |
 |---|---|---|---|
 | nav-shell-01 | App shell layout | Side bar, Panels | Outer gutter `layout/shell-gutter` on all sides; sidebar + optional Ana panel + content; no global top bar `[verified from prototype]`; where app-level toolbars go |
-| nav-sidebar-01 | Sidebar | Side bar, Side bar/Item card, Search field, Segments control, Switcher | Written: `patterns/nav-sidebar-01.md` |
+| nav-sidebar-01 | Sidebar | Navigation bars/Side bar, Menu items/Side bar/Item card, Inputs/Search field, Tabs/Segments control/Default, Switcher/General, Primitives/Avatars | Written: `patterns/nav-sidebar-01.md` |
 | nav-toolbar-01 | Right toolbar: contents and states | Right menu, Icon button | Which actions qualify (view-level only); order; pinned-bottom item (feedback); collapsed-only vs labeled; hide when the view has no actions |
 | nav-user-01 | User menu placement and contents | Menu items/Profile, Profile menu | Contents: theme selector, Profile, User Management (role-gated), Manage Quick Access Buttons (admin), Logout |
 | nav-ana-01 | Ana panel: open, collapsed, closed | Panels/Conversation, Inputs/Chat | Opens as left column at `layout/panel-ana-expanded` (not below `layout/panel-ana-min`), collapses to `layout/panel-ana-collapsed`, closes; sidebar Ana block hides when panel is open; New conversation and History entry points |
