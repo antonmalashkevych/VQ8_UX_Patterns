@@ -26,12 +26,13 @@ Read `AGENTS.md` first. Load a pattern file only when its `applies-to` matches y
 | nav-help | Help entry point | 1 | proposed | shell | patterns/nav-help.md |
 | state-loading | Loading states | 1 | proposed | all | patterns/state-loading.md |
 | state-empty | Empty states | 1 | proposed | all | patterns/state-empty.md |
-| state-error | Error states | 1 | proposed | all | patterns/state-error.md |
+| state-error | Inline and banner errors | 1 | proposed | all | patterns/state-error.md |
 | state-permission | No-permission states | 1 | proposed | all | patterns/state-permission.md |
 | state-stale | Data freshness | 1 | proposed | all | patterns/state-stale.md |
 | fb-toast | Toasts and confirmations | 1 | proposed | all | patterns/fb-toast.md |
 | fb-validation | Form validation | 1 | proposed | all | patterns/fb-validation.md |
 | fb-confirm | Confirmation dialog | 1 | draft | all | patterns/fb-confirm.md |
+| fb-status-dialog | Status dialog | 1 | draft | all | patterns/fb-status-dialog.md |
 | theme-switch | Theme switching | 1 | proposed | shell | patterns/theme-switch.md |
 | drill-in | Drill-in aggregate to detail | 2 | proposed | analytics, flo, policy-pulse | patterns/drill-in.md |
 | drill-through | Drill-through between apps | 2 | proposed | all | patterns/drill-through.md |
