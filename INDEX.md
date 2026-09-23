@@ -20,6 +20,7 @@ Read `AGENTS.md` first. Load a pattern file only when its `applies-to` matches y
 | nav-tabs-01 | Content tabs | 1 | draft | shell | patterns/nav-tabs-01.md |
 | nav-cvbar-01 | CV navigation bar | 1 | proposed | admin | patterns/nav-cvbar-01.md |
 | nav-breadcrumb-01 | Breadcrumbs | 1 | draft | analytics, flo, policy-pulse, admin | patterns/nav-breadcrumb-01.md |
+| nav-stepper-01 | Stepper | 1 | draft | all | patterns/nav-stepper-01.md |
 | nav-client-01 | Client and facility switcher | 1 | proposed | shell | patterns/nav-client-01.md |
 | nav-alerts-01 | Alerts entry and list | 1 | proposed | shell | patterns/nav-alerts-01.md |
 | nav-help-01 | Help entry point | 1 | proposed | shell | patterns/nav-help-01.md |
