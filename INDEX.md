@@ -19,7 +19,7 @@ Read `AGENTS.md` first. Load a pattern file only when its `applies-to` matches y
 | nav-ana-01 | Ana panel open, collapsed, closed | 1 | proposed | shell, ana | patterns/nav-ana-01.md |
 | nav-tabs-01 | Content tabs | 1 | draft | shell | patterns/nav-tabs-01.md |
 | nav-cvbar-01 | CV navigation bar | 1 | proposed | admin | patterns/nav-cvbar-01.md |
-| nav-breadcrumb-01 | Breadcrumb and location | 1 | proposed | all | patterns/nav-breadcrumb-01.md |
+| nav-breadcrumb-01 | Breadcrumbs | 1 | draft | analytics, flo, policy-pulse, admin | patterns/nav-breadcrumb-01.md |
 | nav-client-01 | Client and facility switcher | 1 | proposed | shell | patterns/nav-client-01.md |
 | nav-alerts-01 | Alerts entry and list | 1 | proposed | shell | patterns/nav-alerts-01.md |
 | nav-help-01 | Help entry point | 1 | proposed | shell | patterns/nav-help-01.md |

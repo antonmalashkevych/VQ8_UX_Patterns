@@ -145,7 +145,7 @@ This is the pattern backlog. Each row becomes one file in `patterns/` using `PAT
 | nav-ana-01 | Ana panel: open, collapsed, closed | Panels/Conversation, Inputs/Chat | Opens as left column at `layout/panel-ana-expanded` (not below `layout/panel-ana-min`), collapses to `layout/panel-ana-collapsed`, closes; sidebar Ana block hides when panel is open; New conversation and History entry points |
 | nav-tabs-01 | Content tabs | Navigation bars/Top bar, Tabs/Top bar, Selections/Arrow switches, Badges/Status | Written: `patterns/nav-tabs-01.md` |
 | nav-cvbar-01 | CV navigation bar | Navigation bars/CV navigation bar, Tabs/Atoms/Segments control/Rounded, Tabs/Atoms/Segment | Written: `patterns/nav-cvbar-01.md` |
-| nav-breadcrumb-01 | Breadcrumb and location indicator | Breadcrumbs | Path shows client / area / item; truncation; clickable ancestors |
+| nav-breadcrumb-01 | Breadcrumbs | Breadcrumbs, Tooltips/Black | Written: `patterns/nav-breadcrumb-01.md` |
 | nav-client-01 | Client and facility context switcher | Dropdown | Where it lives, how switching resets or keeps filters `[draft: not in prototype]` |
 | nav-alerts-01 | Alerts entry point and list | Notification, alerts icon | Badge count, list panel vs page, mark read |
 | nav-help-01 | Help entry point | Help item | Contents, external vs in-app |
