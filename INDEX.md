@@ -31,7 +31,7 @@ Read `AGENTS.md` first. Load a pattern file only when its `applies-to` matches y
 | state-stale | Data freshness | 1 | proposed | all | patterns/state-stale.md |
 | fb-toast | Toasts and confirmations | 1 | proposed | all | patterns/fb-toast.md |
 | fb-validation | Form validation | 1 | proposed | all | patterns/fb-validation.md |
-| fb-confirm | Destructive confirmation | 1 | proposed | all | patterns/fb-confirm.md |
+| fb-confirm | Confirmation dialog | 1 | draft | all | patterns/fb-confirm.md |
 | theme-switch | Theme switching | 1 | proposed | shell | patterns/theme-switch.md |
 | drill-in | Drill-in aggregate to detail | 2 | proposed | analytics, flo, policy-pulse | patterns/drill-in.md |
 | drill-through | Drill-through between apps | 2 | proposed | all | patterns/drill-through.md |

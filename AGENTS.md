@@ -157,7 +157,7 @@ This is the pattern backlog. Each row becomes one file in `patterns/` using `PAT
 | state-stale | Data freshness and stale indicators | Badges/Status, Tooltip | Last refreshed timestamp; stale threshold; reload affordance |
 | fb-toast | Toasts and inline confirmations | Notification, banner-notifications | Duration, stacking, position, undo |
 | fb-validation | Form validation | Tooltips/Validation, Text input | Inline on blur, summary on submit, error copy format |
-| fb-confirm | Destructive action confirmation | Modals/Status Modal, Buttons danger | When a modal is required; wording; default focus on cancel |
+| fb-confirm | Confirmation dialog | Modals, Buttons/General, Buttons/Icon button/Additional | Written: `patterns/fb-confirm.md` |
 | theme-switch | Theme switching | User menu | Light, dark, device; token behavior; persistence |
 
 ### Phase 2: drill-ins, connected apps, tables, contextual actions
