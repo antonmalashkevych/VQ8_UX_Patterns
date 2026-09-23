@@ -148,7 +148,7 @@ This is the pattern backlog. Each row becomes one file in `patterns/` using `PAT
 | nav-breadcrumb | Breadcrumbs | Breadcrumbs, Tooltips/Black | Written: `patterns/nav-breadcrumb.md` |
 | nav-stepper | Stepper | Navigation/Stepper, Navigation/Atom/Stepper, Foundations/Divider/Horizontal | Written: `patterns/nav-stepper.md` |
 | nav-reports-tree | Reports tree | Panels/Reports, Headers/Panels, Menu items/Left menu items, Breadcrumbs, Inputs/Search field | Written: `patterns/nav-reports-tree.md` |
-| nav-alerts | Alerts entry point and list | Notification, alerts icon | Badge count, list panel vs page, mark read |
+| nav-alerts | Alerts panel | Panels/Alerts, Headers/Panels, Tabs/Segments control/Default, Tables/Flo grid data field | Written: `patterns/nav-alerts.md` |
 | nav-help | Help entry point | Help item | Contents, external vs in-app |
 | state-loading | Loading states | Skeleton, Grid loaders, Segments loaders, Spinner | Skeleton for known layout, spinner for unknown; never both; minimum display time |
 | state-empty | Empty states | MISSING: empty state | First-use vs filtered-to-nothing vs no access; icon, title, one line, one action; copy pattern from prototype "Nothing opened today / Items you view will appear here" |
