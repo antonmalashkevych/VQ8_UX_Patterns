@@ -21,7 +21,6 @@ Read `AGENTS.md` first. Load a pattern file only when its `applies-to` matches y
 | nav-cvbar | CV navigation bar | 1 | proposed | admin | patterns/nav-cvbar.md |
 | nav-breadcrumb | Breadcrumbs | 1 | draft | analytics, flo, policy-pulse, admin | patterns/nav-breadcrumb.md |
 | nav-stepper | Stepper | 1 | draft | all | patterns/nav-stepper.md |
-| nav-client-switcher | Client and facility switcher | 1 | proposed | shell | patterns/nav-client-switcher.md |
 | nav-alerts | Alerts entry and list | 1 | proposed | shell | patterns/nav-alerts.md |
 | nav-help | Help entry point | 1 | proposed | shell | patterns/nav-help.md |
 | state-loading | Loading states | 1 | proposed | all | patterns/state-loading.md |
@@ -56,7 +55,7 @@ Read `AGENTS.md` first. Load a pattern file only when its `applies-to` matches y
 | num-format | Number and date formatting | 3 | proposed | all | patterns/num-format.md |
 | motion | Motion and transitions | 3 | proposed | all | patterns/motion.md |
 | keyboard-nav | Keyboard navigation | 3 | proposed | all | patterns/keyboard-nav.md |
-| a11y-01 | Accessibility baseline | 3 | proposed | all | patterns/a11y-01.md |
+| accessibility | Accessibility baseline | 3 | proposed | all | patterns/accessibility.md |
 | microcopy | Microcopy and tone | 3 | proposed | all | patterns/microcopy.md |
 | density-modes | Density modes | 3 | proposed | all | patterns/density-modes.md |
 | tooltip | Tooltips and infoblocks | 3 | proposed | all | patterns/tooltip.md |

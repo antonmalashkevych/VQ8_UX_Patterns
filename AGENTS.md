@@ -55,7 +55,7 @@ Primary: revenue cycle directors and managers, denials and appeals specialists, 
 ### 2.5 Constraints that shape UX
 - Data density is a feature. Tables, KPIs, and financial numbers dominate. Numerals use `font-family/mono` for alignment and digit clarity. `[verified from Kinetic typography page]`
 - Accuracy over decoration. Every number displayed is a claim about money; provenance and freshness matter.
-- Multi-tenant: a user may switch client or facility context. `[draft]`
+- Single tenant per login: a user signs in to one tenant environment; there is no in-app client switching.
 - The platform shows Protected Health Information in production. Patterns MUST NOT include real patient data in examples; use synthetic account identifiers.
 
 ---
@@ -95,7 +95,7 @@ Define once, use consistently. Agents MUST use these terms and MUST NOT introduc
 
 1. AI first, not AI only. Ana is the entry point for questions and the source of proactive insights, but every insight links to the deterministic view (dashboard, worklist, account) that lets a user verify it. No dead-end AI output.
 2. One shell. Every surface renders inside the same sidebar and content area. Apps do not bring their own global navigation.
-3. Context survives navigation. Filters, selected client, date range, and drill path persist across drill-in, drill-through, and back.
+3. Context survives navigation. Filters, date range, and drill path persist across drill-in, drill-through, and back.
 4. Dense but scannable. Default to compact density; use typography scale and surface tokens, not extra whitespace, to create hierarchy.
 5. Explicit states. Every data region defines loading, empty, error, no-permission, and stale states. Agents MUST generate all five.
 6. Dark is default, light is supported, device follows OS. Tokens only; no literal values of any kind. `[verified from prototype theme selector]`
@@ -147,7 +147,6 @@ This is the pattern backlog. Each row becomes one file in `patterns/` using `PAT
 | nav-cvbar | CV navigation bar | Navigation bars/CV navigation bar, Tabs/Atoms/Segments control/Rounded, Tabs/Atoms/Segment | Written: `patterns/nav-cvbar.md` |
 | nav-breadcrumb | Breadcrumbs | Breadcrumbs, Tooltips/Black | Written: `patterns/nav-breadcrumb.md` |
 | nav-stepper | Stepper | Navigation/Stepper, Navigation/Atom/Stepper, Foundations/Divider/Horizontal | Written: `patterns/nav-stepper.md` |
-| nav-client-switcher | Client and facility context switcher | Dropdown | Where it lives, how switching resets or keeps filters `[draft: not in prototype]` |
 | nav-alerts | Alerts entry point and list | Notification, alerts icon | Badge count, list panel vs page, mark read |
 | nav-help | Help entry point | Help item | Contents, external vs in-app |
 | state-loading | Loading states | Skeleton, Grid loaders, Segments loaders, Spinner | Skeleton for known layout, spinner for unknown; never both; minimum display time |
@@ -164,7 +163,7 @@ This is the pattern backlog. Each row becomes one file in `patterns/` using `PAT
 | ID | Pattern | Kit components | Key decisions to capture |
 |---|---|---|---|
 | drill-in | Drill-in from aggregate to detail | Card grid, KPI Segments, Breadcrumbs | What is clickable (KPI, chart segment, row); context carried; how to go back; open in place vs panel vs new view |
-| drill-through | Drill-through between connected apps | Side bar, Panels | Analytics to FLO worklist, Insight to dashboard, Policy Pulse to affected accounts; context contract (client, filters, date range, entity ids); return path |
+| drill-through | Drill-through between connected apps | Side bar, Panels | Analytics to FLO worklist, Insight to dashboard, Policy Pulse to affected accounts; context contract (filters, date range, entity ids); return path |
 | drill-panel | Detail side panel vs full page | Panels/Action, Item History | Threshold for panel; width; stacking rule (one panel at a time) |
 | ctx-rightclick | Right-click context menu | Menu items/Context menu | Which surfaces support it (table rows, cards, chart marks); item order (primary action, open in, copy, save, admin); keyboard equivalent; never the only path |
 | ctx-rowactions | Row hover actions and kebab menu | Card grid data row, Icon button | Hover reveal vs always visible; max visible actions |
@@ -173,7 +172,7 @@ This is the pattern backlog. Each row becomes one file in `patterns/` using `PAT
 | table-select-bulk | Selection and bulk actions | Checkbox with selection, bulk-select | Selection bar appearance; select all across pages; bulk action placement |
 | table-paging | Pagination and virtual scroll | MISSING: pagination | When to page vs scroll; page size; row count display |
 | search | Global and in-page search | Search field, Inputs/Chat | Global search vs Ask Ana; scoping; results grouping |
-| filter-global | Global filters (client, date range, payer) | Dropdown, Date field, Calendar | Placement, persistence, interaction with drill-in |
+| filter-global | Global filters (date range, payer, facility) | Dropdown, Date field, Calendar | Placement, persistence, interaction with drill-in |
 | worklist | Worklist and prioritized queue | Flo grid, Panels/Worklist Option, Icon/Priority | Priority display, claim vs done, next item behavior |
 | insight-card | Ana insight card | Cards, Badges/Status | Type (anomaly, risk, improvement), metric + change, why it matters, suggested action, timestamp, actions (investigate with Ana, open view, save) |
 | recommendation-card | Recommendation and action cards | Cards/Rec Engine Action, Process Preview, Reco Engine List Item | Accept, dismiss, snooze; explanation; audit trail |
@@ -190,7 +189,7 @@ This is the pattern backlog. Each row becomes one file in `patterns/` using `PAT
 | num-format | Number, currency, percent, date formatting | Precision, units, negative values, abbreviated large numbers, `font-family/mono`, right alignment |
 | motion | Motion and transitions | Panel open/close `motion/duration-base`, hover `motion/duration-fast`, `easing/standard`, reduced motion |
 | keyboard-nav | Keyboard navigation and shortcuts | Focus order, sidebar navigation, table navigation, escape closes panel |
-| a11y-01 | Accessibility baseline | Contrast on dark, focus visible, aria labels for icon-only controls, screen reader for KPIs |
+| accessibility | Accessibility baseline | Contrast on dark, focus visible, aria labels for icon-only controls, screen reader for KPIs |
 | microcopy | Microcopy and tone | Sentence case, verbs on buttons, no exclamation marks, how Ana speaks vs system messages |
 | density-modes | Density modes | Compact default; comfortable option; what changes |
 | tooltip | Tooltips and infoblocks | Delay, content limits, when required (icon-only, truncated) |
