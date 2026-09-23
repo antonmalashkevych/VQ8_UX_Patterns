@@ -11,7 +11,7 @@ This file is the entry point for any AI agent or human generating, reviewing, or
 1. Read this file fully. It carries business context, the product map, the UI kit boundary, and the rules.
 2. Open `INDEX.md`. Load only the patterns whose `applies-to` matches the screen you are working on. Do not load everything.
 3. Compose the screen from Kinetic UI kit components (section 5) arranged according to the loaded patterns (section 6). Never redefine a kit component inside a pattern.
-4. In your output, cite pattern IDs you applied (`nav-shell-01`, `state-empty-01`). If two patterns conflict, or the brief requires something no pattern covers, stop and report the gap. Do not invent a resolution silently.
+4. In your output, cite pattern IDs you applied (`nav-shell`, `state-empty`). If two patterns conflict, or the brief requires something no pattern covers, stop and report the gap. Do not invent a resolution silently.
 5. Keywords MUST, MUST NOT, SHOULD, MAY follow RFC 2119. MUST rules are checkable; a screen violating one is non-compliant.
 6. Pattern status governs use: `stable` MUST be followed, `draft` SHOULD be followed and deviations reported, `proposed` is informational, `deprecated` MUST NOT be used for new work.
 
@@ -130,82 +130,82 @@ This is the pattern backlog. Each row becomes one file in `patterns/` using `PAT
 ### Phase 0: foundations for the library itself
 | ID | Pattern | Notes |
 |---|---|---|
-| lib-template-01 | Pattern template and frontmatter schema | `PATTERN_TEMPLATE.md` |
-| lib-index-01 | Index and loading rules for agents | `INDEX.md` |
-| lib-glossary-01 | Glossary | Section 3 above; move to own file when it grows |
-| lib-inventory-01 | Inventory of current apps and known inconsistencies | To be done with screenshots of live VQ8 apps |
+| lib-template | Pattern template and frontmatter schema | `PATTERN_TEMPLATE.md` |
+| lib-index | Index and loading rules for agents | `INDEX.md` |
+| lib-glossary | Glossary | Section 3 above; move to own file when it grows |
+| lib-inventory | Inventory of current apps and known inconsistencies | To be done with screenshots of live VQ8 apps |
 
 ### Phase 1: shell, navigation, identity, global states
 | ID | Pattern | Kit components | Key decisions to capture |
 |---|---|---|---|
-| nav-shell-01 | App shell layout | Side bar, Panels | Outer gutter `layout/shell-gutter` on all sides; sidebar + optional Ana panel + content; no global top bar `[verified from prototype]`; where app-level toolbars go |
-| nav-sidebar-01 | Sidebar | Navigation bars/Side bar, Menu items/Side bar/Item card, Inputs/Search field, Tabs/Segments control/Default, Switcher/General, Primitives/Avatars | Written: `patterns/nav-sidebar-01.md` |
-| nav-toolbar-01 | Toolbar | Navigation bars/Right menu, Menu items/Bar item, Menu items/Profile | Written: `patterns/nav-toolbar-01.md` |
-| nav-user-01 | User menu placement and contents | Menu items/Profile, Profile menu | Contents: theme selector, Profile, User Management (role-gated), Manage Quick Access Buttons (admin), Logout |
-| nav-ana-01 | Ana panel: open, collapsed, closed | Panels/Conversation, Inputs/Chat | Opens as left column at `layout/panel-ana-expanded` (not below `layout/panel-ana-min`), collapses to `layout/panel-ana-collapsed`, closes; sidebar Ana block hides when panel is open; New conversation and History entry points |
-| nav-tabs-01 | Content tabs | Navigation bars/Top bar, Tabs/Top bar, Selections/Arrow switches, Badges/Status | Written: `patterns/nav-tabs-01.md` |
-| nav-cvbar-01 | CV navigation bar | Navigation bars/CV navigation bar, Tabs/Atoms/Segments control/Rounded, Tabs/Atoms/Segment | Written: `patterns/nav-cvbar-01.md` |
-| nav-breadcrumb-01 | Breadcrumbs | Breadcrumbs, Tooltips/Black | Written: `patterns/nav-breadcrumb-01.md` |
-| nav-stepper-01 | Stepper | Navigation/Stepper, Navigation/Atom/Stepper, Foundations/Divider/Horizontal | Written: `patterns/nav-stepper-01.md` |
-| nav-client-01 | Client and facility context switcher | Dropdown | Where it lives, how switching resets or keeps filters `[draft: not in prototype]` |
-| nav-alerts-01 | Alerts entry point and list | Notification, alerts icon | Badge count, list panel vs page, mark read |
-| nav-help-01 | Help entry point | Help item | Contents, external vs in-app |
-| state-loading-01 | Loading states | Skeleton, Grid loaders, Segments loaders, Spinner | Skeleton for known layout, spinner for unknown; never both; minimum display time |
-| state-empty-01 | Empty states | MISSING: empty state | First-use vs filtered-to-nothing vs no access; icon, title, one line, one action; copy pattern from prototype "Nothing opened today / Items you view will appear here" |
-| state-error-01 | Error states | Panels/Alerts, warning-banner | Inline region error vs page error; retry; error id for support |
-| state-permission-01 | No-permission states | Modals/Status Modal | Hide vs disable vs explain; rule per element type |
-| state-stale-01 | Data freshness and stale indicators | Badges/Status, Tooltip | Last refreshed timestamp; stale threshold; reload affordance |
-| fb-toast-01 | Toasts and inline confirmations | Notification, banner-notifications | Duration, stacking, position, undo |
-| fb-validation-01 | Form validation | Tooltips/Validation, Text input | Inline on blur, summary on submit, error copy format |
-| fb-confirm-01 | Destructive action confirmation | Modals/Status Modal, Buttons danger | When a modal is required; wording; default focus on cancel |
-| theme-01 | Theme switching | User menu | Light, dark, device; token behavior; persistence |
+| nav-shell | App shell layout | Side bar, Panels | Outer gutter `layout/shell-gutter` on all sides; sidebar + optional Ana panel + content; no global top bar `[verified from prototype]`; where app-level toolbars go |
+| nav-sidebar | Sidebar | Navigation bars/Side bar, Menu items/Side bar/Item card, Inputs/Search field, Tabs/Segments control/Default, Switcher/General, Primitives/Avatars | Written: `patterns/nav-sidebar.md` |
+| nav-toolbar | Toolbar | Navigation bars/Right menu, Menu items/Bar item, Menu items/Profile | Written: `patterns/nav-toolbar.md` |
+| nav-user-menu | User menu placement and contents | Menu items/Profile, Profile menu | Contents: theme selector, Profile, User Management (role-gated), Manage Quick Access Buttons (admin), Logout |
+| nav-ana-panel | Ana panel: open, collapsed, closed | Panels/Conversation, Inputs/Chat | Opens as left column at `layout/panel-ana-expanded` (not below `layout/panel-ana-min`), collapses to `layout/panel-ana-collapsed`, closes; sidebar Ana block hides when panel is open; New conversation and History entry points |
+| nav-content-tabs | Content tabs | Navigation bars/Top bar, Tabs/Top bar, Selections/Arrow switches, Badges/Status | Written: `patterns/nav-content-tabs.md` |
+| nav-cvbar | CV navigation bar | Navigation bars/CV navigation bar, Tabs/Atoms/Segments control/Rounded, Tabs/Atoms/Segment | Written: `patterns/nav-cvbar.md` |
+| nav-breadcrumb | Breadcrumbs | Breadcrumbs, Tooltips/Black | Written: `patterns/nav-breadcrumb.md` |
+| nav-stepper | Stepper | Navigation/Stepper, Navigation/Atom/Stepper, Foundations/Divider/Horizontal | Written: `patterns/nav-stepper.md` |
+| nav-client-switcher | Client and facility context switcher | Dropdown | Where it lives, how switching resets or keeps filters `[draft: not in prototype]` |
+| nav-alerts | Alerts entry point and list | Notification, alerts icon | Badge count, list panel vs page, mark read |
+| nav-help | Help entry point | Help item | Contents, external vs in-app |
+| state-loading | Loading states | Skeleton, Grid loaders, Segments loaders, Spinner | Skeleton for known layout, spinner for unknown; never both; minimum display time |
+| state-empty | Empty states | MISSING: empty state | First-use vs filtered-to-nothing vs no access; icon, title, one line, one action; copy pattern from prototype "Nothing opened today / Items you view will appear here" |
+| state-error | Error states | Panels/Alerts, warning-banner | Inline region error vs page error; retry; error id for support |
+| state-permission | No-permission states | Modals/Status Modal | Hide vs disable vs explain; rule per element type |
+| state-stale | Data freshness and stale indicators | Badges/Status, Tooltip | Last refreshed timestamp; stale threshold; reload affordance |
+| fb-toast | Toasts and inline confirmations | Notification, banner-notifications | Duration, stacking, position, undo |
+| fb-validation | Form validation | Tooltips/Validation, Text input | Inline on blur, summary on submit, error copy format |
+| fb-confirm | Destructive action confirmation | Modals/Status Modal, Buttons danger | When a modal is required; wording; default focus on cancel |
+| theme-switch | Theme switching | User menu | Light, dark, device; token behavior; persistence |
 
 ### Phase 2: drill-ins, connected apps, tables, contextual actions
 | ID | Pattern | Kit components | Key decisions to capture |
 |---|---|---|---|
-| drill-in-01 | Drill-in from aggregate to detail | Card grid, KPI Segments, Breadcrumbs | What is clickable (KPI, chart segment, row); context carried; how to go back; open in place vs panel vs new view |
-| drill-through-01 | Drill-through between connected apps | Side bar, Panels | Analytics to FLO worklist, Insight to dashboard, Policy Pulse to affected accounts; context contract (client, filters, date range, entity ids); return path |
-| drill-panel-01 | Detail side panel vs full page | Panels/Action, Item History | Threshold for panel; width; stacking rule (one panel at a time) |
-| ctx-rightclick-01 | Right-click context menu | Menu items/Context menu | Which surfaces support it (table rows, cards, chart marks); item order (primary action, open in, copy, save, admin); keyboard equivalent; never the only path |
-| ctx-rowactions-01 | Row hover actions and kebab menu | Card grid data row, Icon button | Hover reveal vs always visible; max visible actions |
-| table-01 | Data table baseline | Card grid, Headers, Table filters | Zebra rows, sticky header, pinned columns, density, numeric alignment, column resize |
-| table-sort-filter-01 | Sorting and filtering | sort, filter, AdvancedUserFilters, Filter badge | Filter bar location; applied filter chips; clear all; saved filters |
-| table-select-bulk-01 | Selection and bulk actions | Checkbox with selection, bulk-select | Selection bar appearance; select all across pages; bulk action placement |
-| table-paging-01 | Pagination and virtual scroll | MISSING: pagination | When to page vs scroll; page size; row count display |
-| search-01 | Global and in-page search | Search field, Inputs/Chat | Global search vs Ask Ana; scoping; results grouping |
-| filter-global-01 | Global filters (client, date range, payer) | Dropdown, Date field, Calendar | Placement, persistence, interaction with drill-in |
-| worklist-01 | Worklist and prioritized queue | Flo grid, Panels/Worklist Option, Icon/Priority | Priority display, claim vs done, next item behavior |
-| insight-card-01 | Ana insight card | Cards, Badges/Status | Type (anomaly, risk, improvement), metric + change, why it matters, suggested action, timestamp, actions (investigate with Ana, open view, save) |
-| reco-01 | Recommendation and action cards | Cards/Rec Engine Action, Process Preview, Reco Engine List Item | Accept, dismiss, snooze; explanation; audit trail |
-| ana-conv-01 | Ana conversation surface | Conversation items, Inputs/Chat | Message types, citations to views, highlight linked insight in feed, pre-filled prompts ("Ask Ana." links) |
-| ana-handoff-01 | Ana to deterministic view handoff | Highlight context | When Ana references an item, feed scrolls and highlights it (`border/emphasis` in `brand/primary`, `motion/duration-slow`) `[verified from prototype]` |
-| save-fav-01 | Favorites, Quick Access, Last Opened | Star, Item card | User favorites vs admin-pinned Quick Access; Last Opened grouping today / yesterday / earlier; type badges dashboard, report, insight |
-| export-01 | Export and share | Right menu (pdf, excel, copy) | Placement in right menu; formats; PHI warning |
-| history-01 | Item history and audit | Panels/Item History, Timeline item | Event list format, who did what when |
-| perm-01 | Users, groups, permissions UI | Cards/Users, Permissions, User Manager | Inherited vs assigned display |
+| drill-in | Drill-in from aggregate to detail | Card grid, KPI Segments, Breadcrumbs | What is clickable (KPI, chart segment, row); context carried; how to go back; open in place vs panel vs new view |
+| drill-through | Drill-through between connected apps | Side bar, Panels | Analytics to FLO worklist, Insight to dashboard, Policy Pulse to affected accounts; context contract (client, filters, date range, entity ids); return path |
+| drill-panel | Detail side panel vs full page | Panels/Action, Item History | Threshold for panel; width; stacking rule (one panel at a time) |
+| ctx-rightclick | Right-click context menu | Menu items/Context menu | Which surfaces support it (table rows, cards, chart marks); item order (primary action, open in, copy, save, admin); keyboard equivalent; never the only path |
+| ctx-rowactions | Row hover actions and kebab menu | Card grid data row, Icon button | Hover reveal vs always visible; max visible actions |
+| table-base | Data table baseline | Card grid, Headers, Table filters | Zebra rows, sticky header, pinned columns, density, numeric alignment, column resize |
+| table-sort-filter | Sorting and filtering | sort, filter, AdvancedUserFilters, Filter badge | Filter bar location; applied filter chips; clear all; saved filters |
+| table-select-bulk | Selection and bulk actions | Checkbox with selection, bulk-select | Selection bar appearance; select all across pages; bulk action placement |
+| table-paging | Pagination and virtual scroll | MISSING: pagination | When to page vs scroll; page size; row count display |
+| search | Global and in-page search | Search field, Inputs/Chat | Global search vs Ask Ana; scoping; results grouping |
+| filter-global | Global filters (client, date range, payer) | Dropdown, Date field, Calendar | Placement, persistence, interaction with drill-in |
+| worklist | Worklist and prioritized queue | Flo grid, Panels/Worklist Option, Icon/Priority | Priority display, claim vs done, next item behavior |
+| insight-card | Ana insight card | Cards, Badges/Status | Type (anomaly, risk, improvement), metric + change, why it matters, suggested action, timestamp, actions (investigate with Ana, open view, save) |
+| recommendation-card | Recommendation and action cards | Cards/Rec Engine Action, Process Preview, Reco Engine List Item | Accept, dismiss, snooze; explanation; audit trail |
+| ana-conv | Ana conversation surface | Conversation items, Inputs/Chat | Message types, citations to views, highlight linked insight in feed, pre-filled prompts ("Ask Ana." links) |
+| ana-handoff | Ana to deterministic view handoff | Highlight context | When Ana references an item, feed scrolls and highlights it (`border/emphasis` in `brand/primary`, `motion/duration-slow`) `[verified from prototype]` |
+| save-favorites | Favorites, Quick Access, Last Opened | Star, Item card | User favorites vs admin-pinned Quick Access; Last Opened grouping today / yesterday / earlier; type badges dashboard, report, insight |
+| export-share | Export and share | Right menu (pdf, excel, copy) | Placement in right menu; formats; PHI warning |
+| item-history | Item history and audit | Panels/Item History, Timeline item | Event list format, who did what when |
+| permissions-ui | Users, groups, permissions UI | Cards/Users, Permissions, User Manager | Inherited vs assigned display |
 
 ### Phase 3: subtle details
 | ID | Pattern | Notes |
 |---|---|---|
-| num-format-01 | Number, currency, percent, date formatting | Precision, units, negative values, abbreviated large numbers, `font-family/mono`, right alignment |
-| motion-01 | Motion and transitions | Panel open/close `motion/duration-base`, hover `motion/duration-fast`, `easing/standard`, reduced motion |
-| kbd-01 | Keyboard navigation and shortcuts | Focus order, sidebar navigation, table navigation, escape closes panel |
+| num-format | Number, currency, percent, date formatting | Precision, units, negative values, abbreviated large numbers, `font-family/mono`, right alignment |
+| motion | Motion and transitions | Panel open/close `motion/duration-base`, hover `motion/duration-fast`, `easing/standard`, reduced motion |
+| keyboard-nav | Keyboard navigation and shortcuts | Focus order, sidebar navigation, table navigation, escape closes panel |
 | a11y-01 | Accessibility baseline | Contrast on dark, focus visible, aria labels for icon-only controls, screen reader for KPIs |
-| copy-01 | Microcopy and tone | Sentence case, verbs on buttons, no exclamation marks, how Ana speaks vs system messages |
-| density-01 | Density modes | Compact default; comfortable option; what changes |
-| tooltip-01 | Tooltips and infoblocks | Delay, content limits, when required (icon-only, truncated) |
-| badge-01 | Status, tag, chip semantics | Which badge for which meaning; color mapping to semantic tokens |
-| chart-interaction-01 | Chart hover, select, drill | Tooltip content, selection highlighting, legend behavior (chart visuals owned by Kinetic dataviz) |
-| print-01 | Print and PDF layout | What collapses, what is hidden |
+| microcopy | Microcopy and tone | Sentence case, verbs on buttons, no exclamation marks, how Ana speaks vs system messages |
+| density-modes | Density modes | Compact default; comfortable option; what changes |
+| tooltip | Tooltips and infoblocks | Delay, content limits, when required (icon-only, truncated) |
+| badge-semantics | Status, tag, chip semantics | Which badge for which meaning; color mapping to semantic tokens |
+| chart-interaction | Chart hover, select, drill | Tooltip content, selection highlighting, legend behavior (chart visuals owned by Kinetic dataviz) |
+| print-layout | Print and PDF layout | What collapses, what is hidden |
 
 ---
 
 ## 7. Rules for agents generating VisiQuate UI
 
 Shell and navigation
-- MUST render inside the shell (nav-shell-01). MUST NOT add a second global navigation or a top bar.
-- MUST place the user menu in exactly the location nav-user-01 specifies, nowhere else.
-- MUST keep the sidebar group order: core views, TOOLS, footer (nav-sidebar-01).
+- MUST render inside the shell (nav-shell). MUST NOT add a second global navigation or a top bar.
+- MUST place the user menu in exactly the location nav-user-menu specifies, nowhere else.
+- MUST keep the sidebar group order: core views, TOOLS, footer (nav-sidebar).
 - MUST put destinations in the sidebar and view actions in the toolbar.
 - MUST use glossary names for shell parts.
 

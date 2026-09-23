@@ -1,5 +1,5 @@
 ---
-id: nav-sidebar-01
+id: nav-sidebar
 name: Sidebar
 status: draft
 version: 0.3
@@ -7,8 +7,8 @@ phase: 1
 owner: anton.malashkevych
 last-reviewed: 2026-09-18
 applies-to: [shell]
-boundaries: [nav-toolbar-01: view actions, nav-ana-01: Ana conversation, nav-user-01: user menu contents]
-related: [nav-shell-01, nav-alerts-01, nav-help-01, save-fav-01]
+boundaries: [nav-toolbar: view actions, nav-ana-panel: Ana conversation, nav-user-menu: user menu contents]
+related: [nav-shell, nav-alerts, nav-help, save-favorites]
 supersedes: []
 kit-notes: ["KIT REQUEST: deprecate Navigation bars/Left menu in favor of Navigation bars/Side bar", "TOKEN REQUEST: layout/sidebar-collapsed, layout/sidebar-expanded, motion/duration-base"]
 figma: https://www.figma.com/design/QWpZtLfVsUjbc99Lj3JJwJ/Kinetic-Platform---Atomic-Library-of-Elements?node-id=1-15

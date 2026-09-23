@@ -1,5 +1,5 @@
 ---
-id: nav-breadcrumb-01
+id: nav-breadcrumb
 name: Breadcrumbs
 status: draft
 version: 0.1
@@ -7,8 +7,8 @@ phase: 1
 owner: anton.malashkevych
 last-reviewed: 2026-09-23
 applies-to: [analytics, flo, policy-pulse, admin]
-boundaries: [nav-tabs-01: open views, nav-cvbar-01: section navigation with back control]
-related: [nav-shell-01, drill-in-01]
+boundaries: [nav-content-tabs: open views, nav-cvbar: section navigation with back control]
+related: [nav-shell, drill-in]
 supersedes: []
 kit-notes: ["Not present in the reference build; documented from the kit only"]
 figma: https://www.figma.com/design/QWpZtLfVsUjbc99Lj3JJwJ/Kinetic-Platform---Atomic-Library-of-Elements?node-id=13282-182894

@@ -1,5 +1,5 @@
 ---
-id: nav-tabs-01
+id: nav-content-tabs
 name: Content tabs
 status: draft
 version: 0.2
@@ -7,8 +7,8 @@ phase: 1
 owner: anton.malashkevych
 last-reviewed: 2026-09-18
 applies-to: [shell]
-boundaries: [nav-sidebar-01: destinations, nav-cvbar-01: section navigation inside an app]
-related: [nav-shell-01, save-fav-01]
+boundaries: [nav-sidebar: destinations, nav-cvbar: section navigation inside an app]
+related: [nav-shell, save-favorites]
 supersedes: []
 kit-notes: []
 figma: https://www.figma.com/design/QWpZtLfVsUjbc99Lj3JJwJ/Kinetic-Platform---Atomic-Library-of-Elements?node-id=1-15
@@ -49,5 +49,5 @@ many tabs
 - Many tabs: the list scrolls with arrow switches at both ends.
 
 ## Changelog
-- 0.2 2026-09-18: user name removed from Navigation bars/Top bar in Figma (all five variants); tabs left-aligned. User lives in the sidebar footer (nav-sidebar-01).
+- 0.2 2026-09-18: user name removed from Navigation bars/Top bar in Figma (all five variants); tabs left-aligned. User lives in the sidebar footer (nav-sidebar).
 - 0.1 2026-09-18: created from Navigation bars/Top bar and reference build.

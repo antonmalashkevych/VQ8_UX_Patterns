@@ -1,5 +1,5 @@
 ---
-id: nav-stepper-01
+id: nav-stepper
 name: Stepper
 status: draft
 version: 0.1
@@ -7,8 +7,8 @@ phase: 1
 owner: anton.malashkevych
 last-reviewed: 2026-09-23
 applies-to: [all]
-boundaries: [nav-tabs-01: open views, nav-breadcrumb-01: location in a hierarchy]
-related: [fb-validation-01]
+boundaries: [nav-content-tabs: open views, nav-breadcrumb: location in a hierarchy]
+related: [fb-validation]
 supersedes: []
 kit-notes: ["Not present in the reference build; documented from the kit only", "KIT REQUEST: variant Step=3, # of steps=5 contains a stray ellipse (Oval Copy 7, text/primary) outside the atom instances"]
 figma: https://www.figma.com/design/QWpZtLfVsUjbc99Lj3JJwJ/Kinetic-Platform---Atomic-Library-of-Elements?node-id=13331-185125

@@ -1,5 +1,5 @@
 ---
-id: <area>-<name>-<nn>          # stable, never reused. e.g. nav-user-01
+id: <area>-<specific-name>       # stable, never reused. e.g. nav-user-menu
 name: <Human name>
 status: proposed | draft | stable | deprecated
 version: 0.1
@@ -7,8 +7,8 @@ phase: 1 | 2 | 3
 owner: anton.malashkevych
 last-reviewed: YYYY-MM-DD
 applies-to: [shell, analytics, flo, policy-pulse, denial-copilot, patient-access-copilot, ana, admin]
-boundaries: [nav-toolbar-01: view actions, nav-ana-01: Ana conversation]   # what this pattern is not; pattern ID and one phrase
-related: [nav-shell-01]
+boundaries: [nav-toolbar: view actions, nav-ana-panel: Ana conversation]   # what this pattern is not; pattern ID and one phrase
+related: [nav-shell]
 supersedes: []                   # pattern IDs this replaces
 kit-notes: []                    # KIT REQUEST or TOKEN REQUEST lines
 figma: <url or empty>
