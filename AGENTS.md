@@ -148,6 +148,7 @@ This is the pattern backlog. Each row becomes one file in `patterns/` using `PAT
 | nav-breadcrumb | Breadcrumbs | Breadcrumbs, Tooltips/Black | Written: `patterns/nav-breadcrumb.md` |
 | nav-stepper | Stepper | Navigation/Stepper, Navigation/Atom/Stepper, Foundations/Divider/Horizontal | Written: `patterns/nav-stepper.md` |
 | nav-reports-tree | Reports tree | Panels/Reports, Headers/Panels, Menu items/Left menu items, Breadcrumbs, Inputs/Search field | Written: `patterns/nav-reports-tree.md` |
+| panel-base | Panel | Panels/*, Headers/Panels, Buttons/Icon button/Additional | Written: `patterns/panel-base.md` |
 | nav-alerts | Alerts panel | Panels/Alerts, Headers/Panels, Tabs/Segments control/Default, Tables/Flo grid data field | Written: `patterns/nav-alerts.md` |
 | nav-help | Help entry point | Help item | Contents, external vs in-app |
 | state-loading | Loading states | Skeleton, Grid loaders, Segments loaders, Spinner | Skeleton for known layout, spinner for unknown; never both; minimum display time |
@@ -166,7 +167,6 @@ This is the pattern backlog. Each row becomes one file in `patterns/` using `PAT
 |---|---|---|---|
 | drill-in | Drill-in from aggregate to detail | Card grid, KPI Segments, Breadcrumbs | What is clickable (KPI, chart segment, row); context carried; how to go back; open in place vs panel vs new view |
 | drill-through | Drill-through between connected apps | Side bar, Panels | Analytics to FLO worklist, Insight to dashboard, Policy Pulse to affected accounts; context contract (filters, date range, entity ids); return path |
-| drill-panel | Detail side panel vs full page | Panels/Action, Item History | Threshold for panel; width; stacking rule (one panel at a time) |
 | ctx-rightclick | Right-click context menu | Menu items/Context menu | Which surfaces support it (table rows, cards, chart marks); item order (primary action, open in, copy, save, admin); keyboard equivalent; never the only path |
 | ctx-rowactions | Row hover actions and kebab menu | Card grid data row, Icon button | Hover reveal vs always visible; max visible actions |
 | table-base | Data table baseline | Card grid, Headers, Table filters | Zebra rows, sticky header, pinned columns, density, numeric alignment, column resize |

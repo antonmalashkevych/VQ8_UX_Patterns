@@ -7,7 +7,7 @@ phase: 1
 owner: anton.malashkevych
 last-reviewed: 2026-09-23
 applies-to: [analytics]
-boundaries: [nav-sidebar: global destinations, nav-content-tabs: open views, drill-panel: panel base]
+boundaries: [nav-sidebar: global destinations, nav-content-tabs: open views, panel-base: panel base]
 related: [nav-breadcrumb, search]
 supersedes: []
 kit-notes: ["Not present in the reference build; documented from the kit only", "Panels/Reports uses Menu items/Left menu items for tree rows; Navigation bars/Left menu is deprecated but this item component is still in use"]

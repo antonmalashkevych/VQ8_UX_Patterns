@@ -7,7 +7,7 @@ phase: 1
 owner: anton.malashkevych
 last-reviewed: 2026-09-23
 applies-to: [shell]
-boundaries: [nav-sidebar: the Alerts entry item, fb-toast: transient notifications, drill-panel: panel base]
+boundaries: [nav-sidebar: the Alerts entry item, fb-toast: transient notifications, panel-base: panel base]
 related: [nav-sidebar, badge-semantics]
 supersedes: []
 kit-notes: ["Panels/Alerts has one variant (Dark/Light=False); the Text view of the Colors / Text switcher is not designed", "Not present in the reference build beyond the sidebar item"]

@@ -6,7 +6,7 @@ Read `AGENTS.md` first. Load a pattern file only when its `applies-to` matches y
 1. Always load: `AGENTS.md`.
 2. For any screen: nav-shell, nav-sidebar, state-loading, state-empty, state-error, state-permission.
 3. Add by surface: `applies-to` column below.
-4. Add by element: if the screen has a table, load all `table-*`; a detail view, `drill-*`; Ana content, `ana-*` and `insight-card`.
+4. Add by element: if the screen has a table, load all `table-*`; a detail view, `drill-*` and `panel-base`; Ana content, `ana-*` and `insight-card`.
 
 ## Patterns
 
@@ -22,6 +22,7 @@ Read `AGENTS.md` first. Load a pattern file only when its `applies-to` matches y
 | nav-breadcrumb | Breadcrumbs | 1 | draft | analytics, flo, policy-pulse, admin | patterns/nav-breadcrumb.md |
 | nav-stepper | Stepper | 1 | draft | all | patterns/nav-stepper.md |
 | nav-reports-tree | Reports tree | 1 | draft | analytics | patterns/nav-reports-tree.md |
+| panel-base | Panel | 1 | draft | all | patterns/panel-base.md |
 | nav-alerts | Alerts panel | 1 | draft | shell | patterns/nav-alerts.md |
 | nav-help | Help entry point | 1 | proposed | shell | patterns/nav-help.md |
 | state-loading | Loading states | 1 | proposed | all | patterns/state-loading.md |
@@ -36,7 +37,6 @@ Read `AGENTS.md` first. Load a pattern file only when its `applies-to` matches y
 | theme-switch | Theme switching | 1 | proposed | shell | patterns/theme-switch.md |
 | drill-in | Drill-in aggregate to detail | 2 | proposed | analytics, flo, policy-pulse | patterns/drill-in.md |
 | drill-through | Drill-through between apps | 2 | proposed | all | patterns/drill-through.md |
-| drill-panel | Detail panel vs full page | 2 | proposed | all | patterns/drill-panel.md |
 | ctx-rightclick | Right-click context menu | 2 | proposed | analytics, flo | patterns/ctx-rightclick.md |
 | ctx-rowactions | Row hover actions | 2 | proposed | all | patterns/ctx-rowactions.md |
 | table-base | Data table baseline | 2 | proposed | all | patterns/table-base.md |
