@@ -16,7 +16,7 @@ Read `AGENTS.md` first. Load a pattern file only when its `applies-to` matches y
 | nav-sidebar | Sidebar | 1 | draft | shell | patterns/nav-sidebar.md |
 | nav-toolbar | Toolbar | 1 | proposed | shell | patterns/nav-toolbar.md |
 | nav-user-menu | User menu placement and contents | 1 | proposed | shell | patterns/nav-user-menu.md |
-| nav-ana-panel | Ana panel open, collapsed, closed | 1 | proposed | shell, ana | patterns/nav-ana-panel.md |
+| nav-ana-panel | Ana panel | 1 | draft | shell, ana | patterns/nav-ana-panel.md |
 | nav-content-tabs | Content tabs | 1 | draft | shell | patterns/nav-content-tabs.md |
 | nav-cvbar | CV navigation bar | 1 | proposed | admin | patterns/nav-cvbar.md |
 | nav-breadcrumb | Breadcrumbs | 1 | draft | analytics, flo, policy-pulse, admin | patterns/nav-breadcrumb.md |

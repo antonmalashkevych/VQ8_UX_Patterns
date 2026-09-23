@@ -142,7 +142,7 @@ This is the pattern backlog. Each row becomes one file in `patterns/` using `PAT
 | nav-sidebar | Sidebar | Navigation bars/Side bar, Menu items/Side bar/Item card, Inputs/Search field, Tabs/Segments control/Default, Switcher/General, Primitives/Avatars | Written: `patterns/nav-sidebar.md` |
 | nav-toolbar | Toolbar | Navigation bars/Right menu, Menu items/Bar item, Menu items/Profile | Written: `patterns/nav-toolbar.md` |
 | nav-user-menu | User menu placement and contents | Menu items/Profile, Profile menu | Contents: theme selector, Profile, User Management (role-gated), Manage Quick Access Buttons (admin), Logout |
-| nav-ana-panel | Ana panel: open, collapsed, closed | Panels/Conversation, Inputs/Chat | Opens as left column at `layout/panel-ana-expanded` (not below `layout/panel-ana-min`), collapses to `layout/panel-ana-collapsed`, closes; sidebar Ana block hides when panel is open; New conversation and History entry points |
+| nav-ana-panel | Ana panel | Panels/Chat, Headers/Chat, Inputs/Chat, Conversation item/Chat, Conversation item/Molecules/Conversations list items, Icon/Ana/Rounded chat icons | Written: `patterns/nav-ana-panel.md` |
 | nav-content-tabs | Content tabs | Navigation bars/Top bar, Tabs/Top bar, Selections/Arrow switches, Badges/Status | Written: `patterns/nav-content-tabs.md` |
 | nav-cvbar | CV navigation bar | Navigation bars/CV navigation bar, Tabs/Atoms/Segments control/Rounded, Tabs/Atoms/Segment | Written: `patterns/nav-cvbar.md` |
 | nav-breadcrumb | Breadcrumbs | Breadcrumbs, Tooltips/Black | Written: `patterns/nav-breadcrumb.md` |
